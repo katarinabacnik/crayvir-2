@@ -11,7 +11,7 @@ rule sort_remove_self:
     threads: 1
     shell:
         """
-        python workflow/scripts/sort_remove_self.py \
+        python workflow/scripts/sort_remove_self_new.py \
             --input {input.blast} \
             --output {output.sorted} \
             > {log.logO} 2> {log.logE}
