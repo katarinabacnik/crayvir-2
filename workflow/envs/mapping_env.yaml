@@ -10,7 +10,7 @@ dependencies:
   - pigz
   - pandas
   - bbmap
-  - biopython=1.81
+  - biopython
   - pysam
 
 

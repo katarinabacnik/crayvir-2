@@ -1,6 +1,6 @@
 rule blast:
     input:
-        f = RESULTS_DIR + "/merged/merged_viral_contigs.fasta"
+        f = RESULTS_DIR + "/merged/merged_viral_contigs_min1000.fasta"
     output:
         db = temp(RESULTS_DIR + "/merged/blastdb.nhr"),
         t = RESULTS_DIR + "/merged/blastn_pairs.tsv"

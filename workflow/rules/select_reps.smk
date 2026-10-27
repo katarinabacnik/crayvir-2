@@ -1,6 +1,6 @@
 rule select_reps:
     input:
-        fasta    = RESULTS_DIR + "/merged/merged_viral_contigs.fasta",
+        fasta    = RESULTS_DIR + "/merged/merged_viral_contigs_min1000.fasta",
         clusters = RESULTS_DIR + "/merged/clusters.tsv"
     output:
         reps_fasta = RESULTS_DIR + "/merged/cluster_representatives.fasta",

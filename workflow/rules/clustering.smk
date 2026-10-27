@@ -1,6 +1,6 @@
 rule clustering:
     input:
-        fasta = RESULTS_DIR + "/merged/merged_viral_contigs.fasta",
+        fasta = RESULTS_DIR + "/merged/merged_viral_contigs_min1000.fasta",
         edges = RESULTS_DIR + "/merged/edges_filtered.tsv"
     output:
         clusters = RESULTS_DIR + "/merged/clusters.tsv",
