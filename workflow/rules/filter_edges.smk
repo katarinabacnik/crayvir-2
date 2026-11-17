@@ -1,6 +1,6 @@
 rule filter_edges:
     input:
-        fasta = RESULTS_DIR + "/merged/merged_viral_contigs_min1000.fasta",
+        fasta = RESULTS_DIR + "/merged/merged_viral_contigs.fasta",
         blast = RESULTS_DIR + "/merged/blastn_pairs_sorted_no_self.tsv.gz"
     output:
         pairs = RESULTS_DIR + "/merged/blastn_pairs_sorted_no_self_filtered.tsv",
