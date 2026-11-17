@@ -10,7 +10,7 @@ rule calculate_read_count_percentage:
             sample=samples["sample"].tolist()
         )
     output:
-        percentages = RESULTS_DIR + "/merged/reps_read_count_percentage_samples.tsv"
+        percentages = RESULTS_DIR + "/merged/reps_read_count_percentage_samples_filtered.tsv"
     log:
         logO = "logs/read_count_percentage/read_count_percentage.log",
         logE = "logs/read_count_percentage/read_count_percentage.err.log"
